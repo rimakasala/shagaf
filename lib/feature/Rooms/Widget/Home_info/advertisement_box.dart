@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 class AdvertisementBox extends StatelessWidget {
-<<<<<<< HEAD
-  const AdvertisementBox(
-=======
+
+  const
+
   AdvertisementBox(
->>>>>>> origin/main
+
       {super.key, required this.image, required this.price, required this.time, required this.date, required this.title});
 
   final image;
@@ -17,11 +17,9 @@ class AdvertisementBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 250,
-<<<<<<< HEAD
+
       margin: const EdgeInsets.only(right: 10),
-=======
-      margin: EdgeInsets.only(right: 10),
->>>>>>> origin/main
+
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         color: const Color(0xff20473E),

@@ -8,8 +8,6 @@ const Advertisement_image='images/Advertisement_image.jpeg';
  Color colorThemTeal =const Color (0xff146356);
  Color colorThemRed=const Color(0xffF04c29);
 
- Color colorThemTeal =Color (0xff146356);
- Color colorThemRed=Color(0xffF04c29);
 
 
  class Option {

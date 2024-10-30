@@ -51,11 +51,11 @@ class _SplashState extends State<Splash> {
             padding: const EdgeInsets.only(right: 25),
             child: InkWell(
               onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>const Login()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Login()));
               },
               child: InkWell(
                 onTap: (){
-                  Navigator.push(context,MaterialPageRoute(builder: (context)=>const Login()));
+                  Navigator.push(context,MaterialPageRoute(builder: (context)=> Login()));
                 },
                 child: const Text('Skip',style: TextStyle(
                   color: Colors.white,
