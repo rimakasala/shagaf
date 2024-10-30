@@ -15,7 +15,7 @@ class SuccessAlertdialog extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              Container(
+              SizedBox(
                   height:100,
                   child: const Image(image: AssetImage(alartImage))),
               const Text('Success', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),

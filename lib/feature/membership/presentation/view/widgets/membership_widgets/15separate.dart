@@ -16,8 +16,8 @@ class separate15 extends StatelessWidget {
           child: Container(
             color: Colors.white,
             width:double.maxFinite,height: 220.h,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
+            child: const Padding(
+              padding: EdgeInsets.all(8.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

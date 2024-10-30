@@ -6,13 +6,15 @@ class Uppertext extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
+        color: Colors.white,
             shadowColor: Colors.black,
               elevation: 5,
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: Container(
+                child: SizedBox(
                   width: double.maxFinite,
                   height: 50.h,
+                
                   child: Row(
                     children: [
                        Container(
@@ -24,7 +26,7 @@ class Uppertext extends StatelessWidget {
                 ),
               ),
           
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Expanded(
                         child: Text(
                           "You can buy them from anywhere else without any cost or services",

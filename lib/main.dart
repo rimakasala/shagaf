@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:shagaf/feature/membership/presentation/view/Membership_screen.dart';
 import 'package:shagaf/feature/membership/presentation/view/birthday_screen.dart';
+import 'package:shagaf/feature/membership/presentation/view/date&timescreen.dart';
+import 'package:shagaf/feature/membership/presentation/view/photosessionscreen.dart';
+
+import 'feature/membership/presentation/view/bookingreviewscreen.dart';
 
 
 
@@ -26,7 +30,7 @@ class MyApp extends StatelessWidget {
           ),
         );
       },
-      child: const BirthdayScreen(),
+      child:const Booking_review_screen()
     );
   }
 }

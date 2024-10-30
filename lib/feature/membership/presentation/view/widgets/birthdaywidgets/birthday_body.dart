@@ -6,13 +6,13 @@ import 'package:shagaf/feature/membership/presentation/view/widgets/birthdaywidg
 import 'package:shagaf/feature/membership/presentation/view/widgets/birthdaywidgets/totalcoast.dart';
 import 'package:shagaf/feature/membership/presentation/view/widgets/birthdaywidgets/uppertext.dart';
 class BirthdayBody extends StatelessWidget {
-   BirthdayBody({super.key});
+   const BirthdayBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
+    return const CustomScrollView(
       slivers: [
-        const SliverToBoxAdapter(
+        SliverToBoxAdapter(
           child: Birthdayappbar(),
         ),
         SliverToBoxAdapter(child: SizedBox(height: 20,)),
@@ -20,12 +20,7 @@ class BirthdayBody extends StatelessWidget {
           child: Uppertext(),
         ),
         SliverToBoxAdapter(child: SizedBox(height: 20,)),
-        SliverToBoxAdapter(
-          child: Padding(
-            padding: const EdgeInsets.only(left:15),
-            child: Text("Cakes",style: TextStyle(color: Colors.black,fontSize: 20.sp),),
-          ),
-        ),
+      
         SliverToBoxAdapter(
           child:Birthdayplanner()
         ),

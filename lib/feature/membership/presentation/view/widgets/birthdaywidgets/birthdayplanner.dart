@@ -8,6 +8,7 @@ class Birthdayplanner extends StatefulWidget {
   const Birthdayplanner( {super.key, });
   
 
+  @override
   _BirthdayplannerState createState() => _BirthdayplannerState(); 
 }
 
@@ -51,6 +52,7 @@ void _incrementItem(Item item) {
 
   
 
+  @override
   Widget build(BuildContext context) {
     return Padding(
         padding: const EdgeInsets.all(16.0),
@@ -68,7 +70,7 @@ void _incrementItem(Item item) {
                     onIncrement: _incrementItem,
                     onDecrement: _decrementItem,
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   ItemList(
                     title: "Decoration",
                     items: decorations,

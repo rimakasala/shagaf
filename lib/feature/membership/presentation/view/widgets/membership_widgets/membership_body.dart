@@ -11,39 +11,39 @@ class MembershipBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Column(
       children: [
-        MembershipAppbar(),
+        const MembershipAppbar(),
         Padding(
-          padding: EdgeInsets.only(left:15,top: 10),
+          padding: const EdgeInsets.only(left:15,top: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Checkbotton(),
+              const Checkbotton(),
               Padding(
-                padding: EdgeInsets.only(left: 5),
+                padding: const EdgeInsets.only(left: 5),
                 child: Text("A month",style: TextStyle(color: Colors.black,fontSize: 25.sp),),
               )
             ],
           ),
         ),
-        Monthdetails(),
+        const Monthdetails(),
           Padding(
-          padding: EdgeInsets.only(left:15,top: 10),
+          padding: const EdgeInsets.only(left:15,top: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Checkbotton(),
+              const Checkbotton(),
               Padding(
-                padding: EdgeInsets.only(left: 5),
+                padding: const EdgeInsets.only(left: 5),
                 child: Text("15 Separate days",style: TextStyle(color: Colors.black,fontSize: 25.sp),),
               ),
               
         
             ],
           )),
-          separate15(),
-          SizedBox(
+          const separate15(),
+          const SizedBox(
               height: 70,
           ),
           Padding(

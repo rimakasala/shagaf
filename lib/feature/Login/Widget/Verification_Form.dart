@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shagaf/core/widget/authentication_button.dart';
 
 class VerificationForm extends StatefulWidget {
+  const VerificationForm({super.key});
+
   @override
   _VerificationFormState createState() => _VerificationFormState();
 }
@@ -16,15 +18,15 @@ class _VerificationFormState extends State<VerificationForm> {
       key: _formKey,
       child: Column(
         children: <Widget>[
-          SizedBox(height: 20,),
+          const SizedBox(height: 20,),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: List.generate(6, (index) {
-              return Container(
+              return SizedBox(
                 width: 40,
                 child: TextFormField(
                   controller: _controllers[index],
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                   ),
                   textAlign: TextAlign.center,
@@ -38,7 +40,7 @@ class _VerificationFormState extends State<VerificationForm> {
               );
             }),
           ),
-          SizedBox(height: 40,),
+          const SizedBox(height: 40,),
 
         ],
       ),

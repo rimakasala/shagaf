@@ -13,8 +13,8 @@ class ItemList extends StatefulWidget {
     required this.items,
     required this.onIncrement,
     required this.onDecrement,
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   _ItemListState createState() => _ItemListState();
@@ -28,14 +28,15 @@ class _ItemListState extends State<ItemList> {
       children: [
         Text(
           widget.title,
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
+      
         ...widget.items.map((item) => ItemCard(
           item: item,
           onIncrement: () => widget.onIncrement(item),
           onDecrement: () => widget.onDecrement(item),
-        )).toList(),
+        )),
       ],
     );
   }

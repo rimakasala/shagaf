@@ -12,7 +12,7 @@ class VerifyInfo extends StatelessWidget {
     int number= 012345678 ;
     return Column(
       children: [
-        ImageShagaf(),
+        const ImageShagaf(),
         Container(
           margin: const EdgeInsets.only(top: 20, left: 20, right: 20),
           width: 350,
@@ -25,7 +25,7 @@ class VerifyInfo extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text('Enter Verification Code',
+                const Text('Enter Verification Code',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 25,
@@ -50,10 +50,10 @@ class VerifyInfo extends StatelessWidget {
                 MaterialButton(
                   onPressed: () {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: SuccessAlertdialog()),
+                      const SnackBar(content: SuccessAlertdialog()),
                     );
                   },
-                  child: AuthenticationButton(data: 'Verify'),
+                  child: const AuthenticationButton(data: 'Verify'),
                 ),
               ],
             ),

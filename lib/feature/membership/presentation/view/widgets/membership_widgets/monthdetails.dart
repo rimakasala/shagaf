@@ -21,9 +21,9 @@ class Monthdetails extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Stepperwidget2(
+                  const Stepperwidget2(
                        text: '1250 LE for one person',),
-                       Stepperwidget2(
+                       const Stepperwidget2(
                        text: 'included daily drink and movie night for you and your friends',),
                       
               

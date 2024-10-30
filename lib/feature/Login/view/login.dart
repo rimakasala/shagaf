@@ -3,7 +3,7 @@ import '../Widget/Login_info.dart';
 import '../Widget/image_shagaf.dart';
 
 class Login extends StatelessWidget {
-  Login({super.key});
+  const Login({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

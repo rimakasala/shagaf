@@ -18,8 +18,7 @@ class AmenitiesBox extends StatelessWidget {
           AmenitiesItem(icon: Icons.wifi, textDescription: 'Wi-fi'),
           AmenitiesItem(icon: Icons.free_breakfast_outlined, textDescription: 'Free coffee'),
            AmenitiesItem(icon: Icons.live_tv_outlined, textDescription: 'Video Conf'),
-           AmenitiesItem(icon: Icons.screenshot_monitor_rounded, textDescription: 'LED screen'),
-          Row(
+           AmenitiesItem(icon: Icons.screenshot_monitor_rounded, textDescription: 'LED screen'), const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Icon(Icons.keyboard_double_arrow_down_rounded,

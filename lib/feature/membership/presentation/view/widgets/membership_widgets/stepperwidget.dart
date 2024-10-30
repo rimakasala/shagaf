@@ -5,6 +5,7 @@ class Stepperwidget2 extends StatelessWidget {
   const Stepperwidget2({super.key, required this.text});
   final String text;
 
+  @override
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,

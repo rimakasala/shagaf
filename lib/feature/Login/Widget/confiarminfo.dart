@@ -57,8 +57,8 @@ class ConfiarmInfo extends StatelessWidget {
 
             height: 30,
           ),
-          PhoneNumberInfo(),
-          SizedBox(
+          const PhoneNumberInfo(),
+          const SizedBox(
 
             height: 10,
           ),

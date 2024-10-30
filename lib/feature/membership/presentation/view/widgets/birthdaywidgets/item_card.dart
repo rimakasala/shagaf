@@ -15,34 +15,58 @@ class ItemCard extends StatelessWidget {
   final Function onIncrement;
   final Function onDecrement;
 
-  ItemCard({super.key,required this.item, required this.onIncrement, required this.onDecrement});
+  const ItemCard({super.key,required this.item, required this.onIncrement, required this.onDecrement});
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.symmetric(vertical: 8),
+      color: item.count > 0 ? const Color(0xFFF04C29).withOpacity(0.7) : Colors.white,
+      margin: const EdgeInsets.symmetric(vertical: 8),
       child: ListTile(
-        leading: Image.network('${item.image}',fit: BoxFit.fill, width: 50, height: 50), 
-        title: Text(item.name),
-        subtitle: Text('${item.price} LE'),
-        trailing: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            if (item.count > 0)
-              Row(
-                children: [
-                  Text('= ${item.count}'),
-                  IconButton(
-                    icon: Icon(Icons.remove),
-                    onPressed: () => onDecrement(),
+        
+        leading: Image.network(item.image,fit: BoxFit.fill, width: 50, height: 50), 
+        title: Text(item.name,style: TextStyle(fontSize: 15.sp,fontWeight: FontWeight.w400),),
+        subtitle: Text('${item.price} LE',style: TextStyle(fontSize: 10.sp,fontWeight: FontWeight.w700),),
+        trailing: SizedBox(
+          height: 30.h,
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              InkWell(
+                onTap: item.count>0? () => onDecrement():null,
+                child:
+                item.count>0? Container(
+                  width: 35.w,
+                  height: 35.h,
+                  decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    shape: BoxShape.circle
+                          
                   ),
-                ],
+                  child: const Icon(Icons.remove,color: Color(0xFFF04C29),),
+                  
+                ):Container()
               ),
-            IconButton(
-              icon: Icon(Icons.add, color: Color(0xFFF04C29)),
-              onPressed: () => onIncrement(),
-            ),
-          ],
+                
+                
+                Container(child: item.count>0? Text(' ${item.count}',style:TextStyle(color: Colors.black,fontSize: 15.sp,fontWeight: FontWeight.w400) ,):null),
+              InkWell(
+                onTap: () => onIncrement(),
+                child: Container(
+                  width: 35.w,
+                  height: 35.h,
+                  decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    shape: BoxShape.circle
+                          
+                  ),
+                  child: const Icon(Icons.add,color: Color(0xFFF04C29),),
+                  
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

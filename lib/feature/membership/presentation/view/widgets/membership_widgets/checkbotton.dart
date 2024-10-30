@@ -29,7 +29,7 @@ class _CheckbottonState extends State<Checkbotton> {
             ),
             borderRadius: BorderRadius.circular(10)
         ),
-        child:isChecked? Center(child: Icon(Icons.check,color: Colors.white,),):null ,
+        child:isChecked? const Center(child: Icon(Icons.check,color: Colors.white,),):null ,
 
       
 
