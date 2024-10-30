@@ -42,7 +42,7 @@ class SignUpInfo extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text('Already have an account? ',
-                    style: TextStyle(fontSize: 10)),
+                    style: const TextStyle(fontSize: 10)),
                 InkWell(
                   onTap: () {
                     Navigator.pushNamed(context, "LogIn");

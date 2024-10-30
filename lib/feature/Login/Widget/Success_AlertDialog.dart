@@ -15,9 +15,9 @@ class SuccessAlertdialog extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              const SizedBox(
+              Container(
                   height:100,
-                  child: Image(image: AssetImage(alartImage))),
+                  child: const Image(image: AssetImage(alartImage))),
               const Text('Success', style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
               const SizedBox(height: 10),
               Text('You have successfully reset your password.',

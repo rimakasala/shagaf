@@ -7,7 +7,7 @@ class Verify extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: const Column(
+      body: Column(
         children: [
           VerifyInfo(),
         ],

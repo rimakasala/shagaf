@@ -19,14 +19,22 @@ class ConfiarmInfo extends StatelessWidget {
       child:  Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+<<<<<<< HEAD
           const Padding(
+=======
+          Padding(
+>>>>>>> origin/main
             padding: EdgeInsets.only(top: 10, left: 10),
             child: Text(
               'Forgot Your Password?',
               style: TextStyle(color: Colors.black, fontSize: 25),
             ),
           ),
+<<<<<<< HEAD
           const Padding(
+=======
+          Padding(
+>>>>>>> origin/main
             padding: EdgeInsets.only(
               left: 10,
             ),
@@ -39,18 +47,32 @@ class ConfiarmInfo extends StatelessWidget {
                   fontWeight: FontWeight.w300),
             ),
           ),
+<<<<<<< HEAD
           const SizedBox(
             height: 30,
           ),
           const PhoneNumberInfo(),
           const SizedBox(
+=======
+          SizedBox(
+            height: 30,
+          ),
+          PhoneNumberInfo(),
+          SizedBox(
+>>>>>>> origin/main
             height: 10,
           ),
           InkWell(
               onTap: (){
+<<<<<<< HEAD
                 Navigator.push(context,MaterialPageRoute(builder: (context)=>const Verify()));
               },
               child: const AuthenticationButton(data: 'Reset Password'))
+=======
+                Navigator.push(context,MaterialPageRoute(builder: (context)=>Verify()));
+              },
+              child: AuthenticationButton(data: 'Reset Password'))
+>>>>>>> origin/main
         ],
       ),
     );

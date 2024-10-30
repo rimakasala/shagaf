@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 class AmenitiesItem extends StatelessWidget {
-   const AmenitiesItem({super.key, required this.icon, required this.textDescription});
+   AmenitiesItem({super.key, required this.icon, required this.textDescription});
   final icon;
   final textDescription;
 
@@ -8,7 +8,7 @@ class AmenitiesItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Padding(
       padding: const EdgeInsets.only(left: 30),
-      child: SizedBox(
+      child: Container(
         width: double.infinity,
         height: 30,
         child: Row(

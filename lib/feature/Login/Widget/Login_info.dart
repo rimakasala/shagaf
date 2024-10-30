@@ -22,12 +22,12 @@ class LoginInfo extends StatelessWidget {
             const PhoneNumberInfo(),
             const PasswordInfo(),
              Padding(
-              padding: const EdgeInsets.only(top: 30),
+              padding: EdgeInsets.only(top: 30),
               child: InkWell(
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const Home()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Home()));
                   },
-                  child: const AuthenticationButton(data: 'Log In')),
+                  child: AuthenticationButton(data: 'Log In')),
             ),
             Padding(
               padding: const EdgeInsets.only(top: 10),
